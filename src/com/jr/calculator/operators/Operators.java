@@ -21,8 +21,13 @@ public class Operators {
 	}
 	
 	public double division(double dividend, double divisor) {
-		double result = (dividend/divisor);
-		return result;
+		if (divisor<dividend) {
+			return dividend/divisor;
+		}
+		else {
+			System.out.println("Division cannot be performed");
+			return 0;
+		}
 	}
 
 }
